@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from 'react';
 import { WalletConnectContext } from './wallet-connect-context';
 import { useWeb3Modal } from '@web3modal/react-native';
 import { ethers } from 'ethers';
-import { resolvePromise } from '~common/utils';
+import { resolveFunction, resolvePromise } from '~common/utils';
 
 const LOG_TAG = '---WalletConnectProvider---';
 
@@ -37,13 +37,14 @@ export const WalletConnectProvider = (props: PropsWithChildren) => {
                     getChainIdError,
                 });
 
-                const message = 'This is a message';
-                const encodedMessage = ethers.utils.hexlify(new TextEncoder().encode(message));
-                console.log(LOG_TAG, { message, encodedMessage });
-                const [signMessageSignature, signMessageError] = await resolvePromise(
+                const rawMessage = 'This is a message';
+
+                console.log(LOG_TAG, { rawMessage });
+
+                const [signMessageSignature, signMessageError] = await resolvePromise<string>(
                     provider.request({
                         method: 'personal_sign',
-                        params: [encodedMessage, address],
+                        params: [rawMessage, address],
                     }),
                 );
 

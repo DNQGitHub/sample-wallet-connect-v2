@@ -53,6 +53,13 @@ export const WalletConnectProvider = (props: PropsWithChildren) => {
                     signMessageError,
                 });
 
+                const hashedMessage = ethers.utils.hashMessage(rawMessage);
+                const [recoveredAddress, recoverAddressError] = resolveFunction(ethers.utils.recoverAddress, [
+                    ethers.utils.arrayify(hashedMessage),
+                    signMessageSignature,
+                ]);
+                console.log(LOG_TAG, { recoveredAddress, recoverAddressError });
+
                 provider.abortPairingAttempt();
                 await provider.cleanupPendingPairings();
                 await provider.disconnect();

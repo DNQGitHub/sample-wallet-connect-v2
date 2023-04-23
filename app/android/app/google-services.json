@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "80080778597",
+    "project_id": "demopn-53550",
+    "storage_bucket": "demopn-53550.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80080778597:android:1a6badec927a09ad4c5d8c",
+        "android_client_info": {
+          "package_name": "com.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80080778597-u39mnclrikflldql4nvpodaabpji3dm3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNdheRILuy7ZcApo11zrGqMhjZ4Rc3nx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80080778597-u39mnclrikflldql4nvpodaabpji3dm3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "80080778597-l4g1e6buibht86raip5vladq945rmchv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.demopn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80080778597:android:f0d12c67f343a2ec4c5d8c",
+        "android_client_info": {
+          "package_name": "com.demopn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80080778597-u39mnclrikflldql4nvpodaabpji3dm3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNdheRILuy7ZcApo11zrGqMhjZ4Rc3nx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80080778597-u39mnclrikflldql4nvpodaabpji3dm3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "80080778597-l4g1e6buibht86raip5vladq945rmchv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.demopn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80080778597:android:ffebc9d2bbf4311d4c5d8c",
+        "android_client_info": {
+          "package_name": "com.seconddapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80080778597-u39mnclrikflldql4nvpodaabpji3dm3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNdheRILuy7ZcApo11zrGqMhjZ4Rc3nx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80080778597-u39mnclrikflldql4nvpodaabpji3dm3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "80080778597-l4g1e6buibht86raip5vladq945rmchv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.demopn"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

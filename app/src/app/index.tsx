@@ -1,8 +1,12 @@
 import React from 'react';
-import { SampleSendbirdUIKit } from './screens';
+import { AppNavigation } from './navigations';
+import { SendBirdUIKitContainer } from '~sendbird/components';
+import { composeNestedComponents } from '~common/utils';
+
+const MultiProviders = composeNestedComponents([SendBirdUIKitContainer, AppNavigation]);
 
 const App = () => {
-    return <SampleSendbirdUIKit />;
+    return <MultiProviders />;
 };
 
 export default App;

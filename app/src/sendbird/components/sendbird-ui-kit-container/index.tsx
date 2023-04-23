@@ -5,7 +5,9 @@ import { FileService, NotificationService, ClipboardService, MediaService } from
 import { configs } from '~configs';
 import { GroupChannel } from '@sendbird/chat/groupChannel';
 
-export const SendBirdUIKitContainer = (props: PropsWithChildren) => {
+const LOG_TAG = '--- SendbirdUIKitContainer ---';
+
+export const SendbirdUIKitContainer = (props: PropsWithChildren) => {
     const { children } = props;
 
     return (

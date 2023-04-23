@@ -11,6 +11,8 @@ import {
 } from '~app/screens';
 import { useSendbirdChat } from '@sendbird/uikit-react-native';
 
+const LOG_TAG = '--- AppNavigation ---';
+
 const Stack = createNativeStackNavigator();
 
 export const AppNavigation = () => {

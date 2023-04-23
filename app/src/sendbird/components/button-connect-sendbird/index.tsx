@@ -1,5 +1,4 @@
-import { User } from '@sendbird/chat';
-import { useConnection } from '@sendbird/uikit-react-native';
+import { useConnection, useSendbirdChat } from '@sendbird/uikit-react-native';
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 import { GestureResponderEvent } from 'react-native-modal';
@@ -12,7 +11,7 @@ export const ButtonConnectSendbird = () => {
     const _onPress = (e: GestureResponderEvent) => {
         console.log(LOG_TAG, 'onPress');
 
-        connect('q-test', { nickname: 'Q-TEST' })
+        connect('q-test-2')
             .then((user) => {
                 console.log(LOG_TAG, { user });
             })
